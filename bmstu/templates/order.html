@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en" class="h-100">
+{% extends 'base.html' %}
+
+{% block title %}Заказ торта с начинкой {{data.cake.name}}{% endblock %}
+
+{% block content %}
+    <div style="text-align: center;">Информация о торте</div>
+    <div style="text-align: center;">Название начинки: {{data.cake.name}}</div>
+    <div style="text-align: center;">Описание: {{data.tastes.discription}} </div>
+{% endblock %}
+
